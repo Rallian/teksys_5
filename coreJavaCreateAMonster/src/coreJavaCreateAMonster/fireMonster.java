@@ -3,7 +3,7 @@ package coreJavaCreateAMonster;
 public class fireMonster extends Monster {
 
 	public fireMonster(String name) {
-		super(name);		
+			super(name);
 	}
 
 
