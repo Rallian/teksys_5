@@ -1,6 +1,7 @@
 package com.test.hib.model;
 
 import javax.persistence.Column;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -25,8 +26,7 @@ public class User {
 	
 	
 	public User(String fullname, String email, String password, int age, double salary, String city) {
-		super();
-		this.id = id;
+		
 		this.fullname = fullname;
 		this.email = email;
 		this.password = password;
