@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Cross</h1>
+    <script type = "text/javascript">
+        let size = ""
+        size = prompt("Please input the cross size")
+        size = Number(size)
+        console.log("Input size: " + size)
+        
+        function cross(s){
+            let result = ""
+            for(let i = 0; i < s; i++){
+        let j = s - 1 - i;
+        for(let k = 0; k < s; k++){
+            if(k == i || k == j) result += "*"
+            else result += " "
+        }
+        result += "\n"
+    }
+    console.log(result)
+        }
+        cross(size)
+    </script>
+</body>
+</html>

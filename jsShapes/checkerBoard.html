@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>JavaScript checkerBoard</h1>
+
+    <script type="text/javascript">
+      let height = "";
+      let width = "";
+
+      height = prompt("Please enter in the height");
+      width = prompt("Please enter in the width");
+
+      height = Number(height);
+      width = Number(width);
+
+      console.log("Input width: " + width);
+      console.log("Input height: " + height);
+
+      function checkerBoard(h, w) {
+          console.log("Shape:")
+        let result = "";
+        for (let i = 0; i < h; i++) {
+          for (let j = 0; j <= w; j++) {
+            if (j === w) result += "\n";
+            else if (i % 2 == 0) {
+              if (j % 2 == 0) {
+                result += "*";
+              } else {
+                result += " ";
+              }
+            } else {
+              if (j % 2 == 0) {
+                result += " ";
+              } else {
+                result += "*";
+              }
+            }
+          }
+        }
+        console.log(result);
+      }
+      checkerBoard(height, width);
+    </script>
+  </body>
+</html>
